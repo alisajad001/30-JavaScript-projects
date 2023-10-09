@@ -7,3 +7,4 @@ This repository contains 100+ mini web projects using HTML, CSS and JavaScript. 
 | **#** | **Project Name** | **Live Demo** |
 |----------------|-----------------|----------|
 | 001 | Hidden Search Widget | [Live Demo](https://codepen.io/alisajad001/pen/WNLLEBg)
+| 002 | Custom Cursor Style | [Live Demo](https://codepen.io/alisajad001/pen/bGOOPjE)
