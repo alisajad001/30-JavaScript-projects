@@ -7,3 +7,52 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body {
+    background-color: #fffbe8;
+    display: flex;
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+.container {
+    margin: auto;
+    width: 70rem;
+    height: 35rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 40px #9999996c;
+    background-color: #fffbe8;
+}
+
+.shop-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.shop-head .logo {
+    color: #222;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.shop-head .logo .logo-highlight {
+    color: #ff6600;
+}
+
+.shop-head .cart {
+    color: #222;
+    border: 1px solid #222;
+    padding: 0.3rem;
+    border-radius: 50%;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.shop-head .cart:hover {
+    color: #ff6600;
+    border-color: #ff6600;
+}
