@@ -1,62 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Shopping Cart</title>
 
     <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Google Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- Shop heading start -->
-        <div class="shop-head">
-            <a href="#" class="logo">shop<span class="logo-highlight">land.</span></a>
-            <a href="#" class="cart">
-                <span class="material-symbols-outlined">
-                    shopping_bag
-                </span> 
-            </a>
-        </div>
-        <!-- Shop heading end -->
+      <!-- Shop heading start -->
+      <div class="shop-head">
+        <a href="#" class="logo"
+          >shop<span class="logo-highlight">land.</span></a
+        >
+        <a href="#" class="cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-bag"
+          >
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+            <path d="M3 6h18" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+        </a>
+      </div>
+      <!-- Shop heading end -->
 
-        <!-- Shop Items start -->
-        <div class="shop-items">
-            <div class="shop-item">
-                <img src="images/products/black-2-slot-toaster.jpg" alt="Item image" class="shop-item-img">
-                <span class="shop-item-name">Black Slot Toaster</span>
-                <p class="shop-item-price">13.49$</p>
-                <button class="btn-add">Add to cart</button>
+      <!-- Cart start -->
+      <div class="shop-cart">
+        <a href="#" class="btn-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </a>
+
+        <h2>Your cart</h2>
+
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="images/products/bathroom-rug.jpg" alt="" />
+
+            <div class="cart-item_details">
+              <h3>asdasdad</h3>
+              <p>13.55$</p>
             </div>
-            <div class="shop-item">
-                <img src="images/products/black-2-slot-toaster.jpg" alt="Item image" class="shop-item-img">
-                <span class="shop-item-name">Black Slot Toaster</span>
-                <p class="shop-item-price">13.49$</p>
-                <button class="btn-add">Add to cart</button>
-            </div>
-            <div class="shop-item">
-                <img src="images/products/black-2-slot-toaster.jpg" alt="Item image" class="shop-item-img">
-                <span class="shop-item-name">Black Slot Toaster</span>
-                <p class="shop-item-price">13.49$</p>
-                <button class="btn-add">Add to cart</button>
-            </div>
-            <div class="shop-item">
-                <img src="images/products/black-2-slot-toaster.jpg" alt="Item image" class="shop-item-img">
-                <span class="shop-item-name">Black Slot Toaster</span>
-                <p class="shop-item-price">13.49$</p>
-                <button class="btn-add">Add to cart</button>
-            </div>
+
+            <input type="number" min="1" max="10" value="1" />
+
+            <button class="btn-buy">Buy</button>
+          </div>
         </div>
-        <!-- Shop Items end -->
+      </div>
+
+      <div class="bought-message">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-check-circle"
+        >
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+          <polyline points="22 4 12 14.01 9 11.01" />
+        </svg>
+        <h2>Comming soon!</h2>
+      </div>
+      <!-- Cart end -->
+
+      <!-- Shop Items start -->
+      <div class="shop-items">
+        <div class="shop-item">
+          <img
+            src="images/products/black-2-slot-toaster.jpg"
+            alt="Item image"
+            class="shop-item-img"
+          />
+          <span class="shop-item-name">Black Slot Toaster</span>
+          <p class="shop-item-price">13.49$</p>
+          <button class="btn-add">
+            Add to cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="shop-item">
+          <img
+            src="images/products/black-2-slot-toaster.jpg"
+            alt="Item image"
+            class="shop-item-img"
+          />
+          <span class="shop-item-name">Black Slot Toaster</span>
+          <p class="shop-item-price">13.49$</p>
+          <button class="btn-add">
+            Add to cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="shop-item">
+          <img
+            src="images/products/black-2-slot-toaster.jpg"
+            alt="Item image"
+            class="shop-item-img"
+          />
+          <span class="shop-item-name">Black Slot Toaster</span>
+          <p class="shop-item-price">13.49$</p>
+          <button class="btn-add">
+            Add to cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="shop-item">
+          <img
+            src="images/products/black-2-slot-toaster.jpg"
+            alt="Item image"
+            class="shop-item-img"
+          />
+          <span class="shop-item-name">Black Slot Toaster</span>
+          <p class="shop-item-price">13.49$</p>
+          <button class="btn-add">
+            Add to cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Shop Items end -->
     </div>
 
     <!-- JavaSvcript -->
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
