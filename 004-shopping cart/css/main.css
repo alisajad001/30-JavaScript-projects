@@ -41,7 +41,7 @@ body {
   color: #ff6600;
 }
 
-.shop-head .cart {
+.shop-head .btn-cart {
   color: #222;
   border: 1px solid #222;
   padding: 0.5rem;
@@ -130,6 +130,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  position: relative;
 }
 
 .cart-item img {
@@ -238,6 +239,15 @@ body {
 .btn-close:hover {
   color: #ff6600;
   border-color: #ff6600;
+}
+
+.btn-remove {
+  color: #eb3737;
+  background: none;
+  border: 0;
+  outline: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 /* Responsive */
